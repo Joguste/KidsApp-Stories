@@ -46,3 +46,21 @@ Exemple :
     "min_age": 3,
     "max_age": 8
 }
+```
+---
+### 4. 📤 Commit et push sur GitHub
+ Enregistrez vos modifications, puis poussez-les sur le dépôt distant :
+
+```bash 
+git add .
+git commit -m "Ajout d'un nouvel audio : Mon histoire audio"
+git push origin main
+```
+---
+
+### 5.⚙️ Lancer la commande artisan pour synchronisation
+Une fois les fichiers mis à jour sur GitHub, exécutez la commande suivante dans le back office (depuis la racine du projet Laravel) :
+
+```bash
+php artisan audios:sync
+```
